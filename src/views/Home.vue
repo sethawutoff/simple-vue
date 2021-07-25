@@ -1,18 +1,25 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>List of income and expenses</h2>
+    <input-form></input-form>
+    <br>
+    <information-table></information-table>
+    <cal-total></cal-total>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import InformationTable from '@/components/InformationTable.vue'
+import InputForm from '@/components/InputForm.vue'
+import CalTotal from '@/components/CalTotal.vue'
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
+    InformationTable, InputForm, CalTotal
+  },
 }
 </script>
+
+<style scoped>
+
+</style>
